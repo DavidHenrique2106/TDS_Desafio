@@ -34,7 +34,6 @@ const CityWeather = () => {
         const fetchedWeatherData = response.data;
         setWeatherData(fetchedWeatherData);
 
-        // Verificar se weatherData é definido antes de acessar coord
         if (fetchedWeatherData && fetchedWeatherData.coord) {
           const { lat, lon } = fetchedWeatherData.coord;
           const e = await axios.get(
@@ -50,8 +49,7 @@ const CityWeather = () => {
     fetchWeather();
   }, [cityName]);
 
-  console.log(weatherDetail);
-  console.log(weatherData);
+ 
   const getIconUrl = (iconCode) => {
     return `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
   };
@@ -106,7 +104,6 @@ const CityWeather = () => {
   const sunriseTime = timestampToTime(weatherData && weatherData.sys.sunrise);
   const sunsetTime = timestampToTime(weatherData && weatherData.sys.sunset);
 
-  console.log(sunriseTime, sunsetTime);
   return (
     <>
       <div className={styles.content} style={contentStyle}>

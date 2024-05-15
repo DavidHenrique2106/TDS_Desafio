@@ -79,7 +79,7 @@
 .divFooter > div {
   flex: 1;
   text-align: center;
-  margin: 0 5px; /* Espaçamento entre os elementos */
+  margin: 0 5px; 
 }
 
 .fontList{
