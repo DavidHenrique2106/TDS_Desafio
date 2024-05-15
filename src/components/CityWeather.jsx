@@ -48,15 +48,6 @@ const CityWeather = () => {
         return '#4E5665';
       case 'snow':
         return '#C9C9C9';
-      case 'mist':
-      case 'smoke':
-      case 'haze':
-      case 'dust':
-      case 'fog':
-      case 'sand':
-      case 'dust':
-      case 'volcanic ash':
-        return '#D3D3D3';
       default:
         return '#FFFFFF';
     }
@@ -76,15 +67,6 @@ const CityWeather = () => {
         return '#FFFFFF';
       case 'snow':
         return 'black';
-      case 'mist':
-      case 'smoke':
-      case 'haze':
-      case 'dust':
-      case 'fog':
-      case 'sand':
-      case 'dust':
-      case 'volcanic ash':
-        return '#D3D3D3';
       default:
         return 'black';
     }
