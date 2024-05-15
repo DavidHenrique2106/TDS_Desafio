@@ -63,10 +63,27 @@
   font-size: 30px;
 }
 
-.content{
+.content {
   background-color: rgb(255, 255, 255);
   margin: 0;
   height: 100vh;
+}
+
+.divFooter {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 0px !important;
+}
+
+.divFooter > div {
+  flex: 1;
+  text-align: center;
+  margin: 0 5px; /* Espaçamento entre os elementos */
+}
+
+.fontList{
+  font-size: 12px;
 }
 
 @media (max-width: 768px) {
